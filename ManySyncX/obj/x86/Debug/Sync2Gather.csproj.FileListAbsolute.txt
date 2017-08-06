@@ -1,0 +1,14 @@
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\bin\Debug\Sync2Gather.exe
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\bin\Debug\Sync2Gather.pdb
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\obj\x86\Debug\MainWindow.baml
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\obj\x86\Debug\MainWindow.g.cs
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\obj\x86\Debug\App.g.cs
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\obj\x86\Debug\Sync2Gather_MarkupCompile.cache
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\obj\x86\Debug\Sync2Gather.g.resources
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\obj\x86\Debug\Sync2Gather.Properties.Resources.resources
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\obj\x86\Debug\Sync2Gather.exe
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\obj\x86\Debug\Sync2Gather.pdb
+E:\工院\Sync2Gather\Sync2Gather\Sync2Gather\bin\Debug\Sync2Gather.exe.config

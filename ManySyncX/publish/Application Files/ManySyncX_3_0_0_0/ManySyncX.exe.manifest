@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ManySyncX.exe" version="3.0.0.0" publicKeyToken="5cdba6dc564bcae6" language="neutral" processorArchitecture="x86" type="win32" />
+  <description asmv2:iconFile="Images\Icon1.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ManySyncX" version="3.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="ManySyncX.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ManySyncX.exe" size="779264">
+      <assemblyIdentity name="ManySyncX" version="3.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>5przyGPCFhbt2IIqfXE54w7tSwQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Images\Icon1.ico" size="155749">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>j91qQXCP455lMWHPevTe1XZH7vw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ManySyncX.exe.config" size="77">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>w7WNgu5MxCvL4DAgISBxgwmhDzU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=Manote\许多" issuerKeyHash="198d2ec7365d8fd7e548a0a4a19f8dacb3e0c134" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>D9bvKe0wmJ9UomwE+/FK+Or3/08=</DigestValue></Reference></SignedInfo><SignatureValue>LJ2iDD3ty50qQtIGOqvzIQWKmtRMRK2c4REWYWCJMRI8hlD9X0OY7gzhV5s/0XECU+rWeUc/s9v+cizxW5pgjgExoUj2em31Nru0KoOBUVrQ8oQFPgckBee+cGJzvLT5AhMOJEQB0Pu74MIoubMJ/dauJi7r2U26TXJ8OfskDzw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sO0Ux9fJ0yPmfRIkjqBoZIfCGXYOilG9CkhyfmZp2pv6EofD/xfbKgqY6TD7KqYOD4JlpzV5Re0tcjzbz2hkJVxCwoVX1JSzuANL6QRZm6kNIBNqJgp8hhxzQ7dV7Vn+fgNCAWDv9F51S1C+Qtiy6SsNlp6xvqKB7EESa9LSRE0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4ffff7eaf84af1fb046ca2549f9830ed29efd60f" Description="" Url=""><as:assemblyIdentity name="ManySyncX.exe" version="3.0.0.0" publicKeyToken="5cdba6dc564bcae6" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Manote\许多</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>7p/azVzHfgMVQactcPJ3OHbYCsI=</DigestValue></Reference></SignedInfo><SignatureValue>MqG2UhSpgYANtsuC0d3xQQJroGenpg0kgmTRntSzHETxKcalaaiyDat/Z6QUjwtE7dmMt91BeZkgCFt1gtteLWKx9tp16GDf2WTHXkWBw4apqkrkE1VEDflp9UAiUyQDQXbAY4Ux/9ZiGRmjXunt74yopgbRQHi9vt4gSPcK56w=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sO0Ux9fJ0yPmfRIkjqBoZIfCGXYOilG9CkhyfmZp2pv6EofD/xfbKgqY6TD7KqYOD4JlpzV5Re0tcjzbz2hkJVxCwoVX1JSzuANL6QRZm6kNIBNqJgp8hhxzQ7dV7Vn+fgNCAWDv9F51S1C+Qtiy6SsNlp6xvqKB7EESa9LSRE0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBvTCCASagAwIBAgIQSg8p7F+NbapNDAmm2P3FtTANBgkqhkiG9w0BAQUFADAdMRswGQYDVQQDHhIATQBhAG4AbwB0AGUAXIu4WRowHhcNMTMwNjA4MDA0NjAwWhcNMTQwNjA4MDY0NjAwWjAdMRswGQYDVQQDHhIATQBhAG4AbwB0AGUAXIu4WRowgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALDtFMfXydMj5n0SJI6gaGSHwhl2DopRvQpIcn5madqb+hKHw/8X2yoKmOkw+yqmDg+CZac1eUXtLXI8289oZCVcQsKFV9SUs7gDS+kEWZupDSATaiYKfIYcc0O3Ve1Z/n4DQgFg7/RedUtQvkLYsukrDZaesb6igexBEmvS0kRNAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEAQckTH0vRH+K5r1pNgM7tas4pEyo4asoi0z2U2gTAMyG4goXyulm+5/nOLAOVYZb3lNh8clPHhTyL7Qr85PjJ/BLZ213aBHCKXm8rZAIEwQEknFvGm3QpnklfgInqTbFV4pc+cEctTygwPi/lbP0uTIgzQflyrOTmEFBp+pIe0qQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

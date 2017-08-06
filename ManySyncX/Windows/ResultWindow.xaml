@@ -1,0 +1,111 @@
+﻿<Window x:Class="ManySyncX.ResultWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="ResultWindow" Height="170"
+        Width="700" MinWidth="500" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" MinHeight="170" WindowStyle="None" MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        AllowsTransparency="True" Background="{x:Null}" ResizeMode="CanResizeWithGrip">
+    <Border Name="WindowBorder" BorderThickness="1" BorderBrush="Black" CornerRadius="0,15,0,15" Background="White">
+        <Grid>
+            <ListBox Margin="15,160,15,15" x:Name="ListBox1" FontWeight="Bold" />
+            <Grid Height="50" Margin="15,60,15,0" x:Name="NumbersGrid" VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Label Content="# Files Copied" x:Name="FileAddLabel" Grid.Row="0" Grid.Column="0" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"
+                        Foreground="Goldenrod" BorderBrush="Gainsboro" BorderThickness="1" Margin="-0.5" MouseLeftButtonDown="CheckDetails_MouseLeftButtonDown" MouseEnter="NumbersGrid_MouseEnter"
+                        MouseLeave="NumbersGrid_MouseLeave" />
+                <Label Content="# Files Deleted" x:Name="FileDelLabel" Grid.Row="1" Grid.Column="0" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"
+                        Foreground="Crimson" BorderBrush="Gainsboro" BorderThickness="1" Margin="-0.5" MouseLeftButtonDown="CheckDetails_MouseLeftButtonDown" MouseEnter="NumbersGrid_MouseEnter"
+                        MouseLeave="NumbersGrid_MouseLeave" />
+                <Label Content="# Files Unchanged" x:Name="FileUnchangeLabel" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="1"
+                        FontWeight="Bold" Foreground="MediumSlateBlue" BorderBrush="Gainsboro" BorderThickness="1" Margin="-0.5" MouseLeftButtonDown="CheckDetails_MouseLeftButtonDown"
+                        MouseEnter="NumbersGrid_MouseEnter" MouseLeave="NumbersGrid_MouseLeave" />
+                <Label Content="# Files Updated" x:Name="FileUpdateLabel" Grid.Row="1" Grid.Column="1" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                        Grid.ColumnSpan="1" FontWeight="Bold" Foreground="Green" BorderBrush="Gainsboro" BorderThickness="1" Margin="-0.5" MouseLeftButtonDown="CheckDetails_MouseLeftButtonDown"
+                        MouseEnter="NumbersGrid_MouseEnter" MouseLeave="NumbersGrid_MouseLeave" />
+                <Label Content="# Items Skipped" HorizontalContentAlignment="Center" x:Name="ItemSkipLabel" Padding="0" VerticalContentAlignment="Center" Grid.Column="2" FontWeight="Bold"
+                        Foreground="Gray" BorderBrush="Gainsboro" BorderThickness="1" Margin="-0.5" MouseLeftButtonDown="CheckDetails_MouseLeftButtonDown" MouseEnter="NumbersGrid_MouseEnter"
+                        MouseLeave="NumbersGrid_MouseLeave" />
+                <Label Content="# Items Failed" HorizontalContentAlignment="Center" x:Name="ItemFailLabel" Padding="0" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1" FontWeight="Bold"
+                        BorderBrush="Gainsboro" BorderThickness="1" Margin="-0.5" MouseLeftButtonDown="CheckDetails_MouseLeftButtonDown" MouseEnter="NumbersGrid_MouseEnter"
+                        MouseLeave="NumbersGrid_MouseLeave" />
+            </Grid>
+            <Button Content="Export Records" Margin="0,125,90,0" x:Name="ExpRecordsButton" Height="23" VerticalAlignment="Top" Background="{x:Null}" FontWeight="Bold" HorizontalAlignment="Right"
+                    Width="120" Click="ExpRecordsButton_Click">
+                <Button.ToolTip>
+                    <TextBlock><Run Text="Save records to a TXT file in ...\My Document\ManySyncX" /></TextBlock>
+                </Button.ToolTip>
+            </Button>
+            <Label Content="Click a category above for details" Height="26" Margin="16,118,0,0" x:Name="label1" VerticalAlignment="Top" Foreground="Gray" HorizontalAlignment="Left" FontSize="12" />
+            <Border Margin="15,15,15,0" x:Name="ColorBarBorder" VerticalAlignment="Top" Height="30" BorderBrush="DimGray" BorderThickness="0.5">
+                <Grid x:Name="ColorBarGrid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="1*" />
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Grid.Column="0" x:Name="FileAddRect">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Gold" Offset="0" />
+                                <GradientStop Color="#FFAAA816" Offset="1" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Grid.Column="1" x:Name="FileDelRect">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="Red" Offset="0" />
+                                <GradientStop Color="DarkRed" Offset="1" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Grid.Column="2" x:Name="FileUpdateRect">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="LimeGreen" Offset="0" />
+                                <GradientStop Color="SeaGreen" Offset="1" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Grid.Column="3" x:Name="FileUnchangeRect">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="LightSkyBlue" Offset="0" />
+                                <GradientStop Color="MediumSlateBlue" Offset="1" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Grid.Column="4" x:Name="FileSkipRect">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="WhiteSmoke" Offset="0" />
+                                <GradientStop Color="DarkGray" Offset="1" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <Rectangle Grid.Column="5" x:Name="rectangle1">
+                        <Rectangle.Fill>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="DimGray" Offset="0" />
+                                <GradientStop Color="Black" Offset="1" />
+                            </LinearGradientBrush>
+                        </Rectangle.Fill>
+                    </Rectangle>
+                </Grid>
+            </Border>
+            <Button Background="{x:Null}" Content="Close" FontWeight="Bold" Height="23" HorizontalAlignment="Right" Margin="0,125,15,0" x:Name="button1" VerticalAlignment="Top" Width="60"
+                    Click="button1_Click">
+                <Button.ToolTip>
+                    <TextBlock><Run Text="Save records to a TXT file in ...\My Document\ManySyncX" /></TextBlock>
+                </Button.ToolTip>
+            </Button>
+        </Grid>
+    </Border>
+</Window>

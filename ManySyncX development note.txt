@@ -1,0 +1,128 @@
+Release Note
+
+
+ManySyncX Version 3.5 planning
+
+Folder "worm hole" function (via directory junctions);
+Fix the position shift of task auto-sync symbol;
+Fixed CPU 100% issue after a series of VB errors;
+Fix issue caused by fast change of tasks with arrow keys;
+
+
+ManySyncX Version 3.3 Alpha
+
+Major upgrades:
+Allows exclusion specified by wildcards expression or regular expression;
+Remove many-to-one mode for UI simplicity and code consistency;
+Simplify sync operation as preview followed by preview-based sync;
+All user rules are taking effect during preview (instead of sync-only);
+Each task has it own summary which is also automatically saved;
+Allows to force updating (or "downdating");
+
+Minor imporvements:
+Require user to have at least one task;
+The order of tasks is now remembered;
+Allow tasks having same name;
+Task listbox will remember your last selected task;
+
+To-do:
+System folders with $ are not correctly converted to RE;
+Ignore files according to general sync rule;
+Invalid directories shown in gray in real time;
+Allows dragging in files or folders to textboxes;
+Fixed potential UI unresponsiveness during preview due to high IOPS of SSD;
+
+
+ManySyncX Version 3.1
+
+Advanced settings can be set for individual task now;
+Synchronization can now be based on preview result (if available);
+Improved preview efficiency by 2-fold;
+All settings and advanced seetings are gathered into the Settings window;
+Not allowed to sync folders that are in father-child relationship;
+
+
+ManySyncX Version 3.0.8
+
+Windows XP(SP3) and Vista compatibility;
+UI responsiveness issue during big task;
+CPU high during breathing arrow animation;
+Abrupt window height transition;
+First click on tray icon does not work;
+Multiple result windows may coexist;
+Incomplete details of "Failed Items";
+Summary window remains after the main window was closed;
+
+
+ManySyncX Version 3.0
+
+Dynamic user interface with many animations;
+Watch folders and synchronize automatically at the background;
+Support minimizing to system tray;
+Latest manual synchronization of each task is shown in a calendar;
+Provide more comprehensive statistics with graphs;
+Deleted files can be found in recycle bin;
+Allow user to pause and abort sync and analysis.
+
+
+ManySyncX Version 2.3
+
+UI becomes smarter and more concise;
+Paths of source and target can be sawped in one to one mode;
+Fixed a minor bug in analysis algorithm;
+Prompt to recommend the user to analyze the task before doing the sync;
+Records automatically scroll to the bottom during sync and analysis.
+
+
+ManySyncX Version 2.2
+ 
+Selected mode of each task can be remembered now;
+Fix small bugs about the prompt in many to one mode;
+Optimized analysis and sync algorithm which now provides more comprehensive reports;
+Records will be exported in new file which is opened automatically; 
+Added author contact in "About" window, looking forward to your feedback;
+Refined some details of user interface;
+Further fixed the error when deleting files with super long path.
+
+
+ManySyncX Version 2.1
+
+Redisigned the user interface making it concise and intuitive;
+Removed the splash screen, and added "About" window£»
+Fixed the error when trying to process files that are occupied by other program;
+Added a new section of summary which lists unprocessed items with no clear reason.
+ 
+
+ManySyncX Version 2.0.12
+ 
+Added animation that represents the processing state during sync or analysis;
+Fixed the bug that the user settings failed to be saved when run for first time;
+Analysis and Sync buttons are inactivated during processing;
+Fixed the error when copying files with super long path;
+Fixed minor bugs about report display.
+ 
+
+ManySyncX Version 2.0.7
+ 
+Software icon added;
+Fixed the bug of duplicating entries everytime the program runs under many to one mode;
+Fixed the error when trying to access inaccessable system hidden folders;
+Fixed potential error about processing hard drive root directory;
+Fixed the bug that in certain instances summary cannot be generated;
+Highlighted name of the current task on which double click can also expand records section;
+Added the function of records export.
+
+
+ManySyncX Version 2.0
+ 
+New infinite tasks system! Each task has its own "one to one" and "many to one" mode;
+New preview function. Highly recommended to preview the task before doing the actual sync (which is irreversible for now);
+New record box in which you can see detailed real-time progress;
+A summary will show the statistics of analysis and sync result;
+Automatically save all setting changes.
+
+
+ManySyncX Version 1.0
+ 
+This is a data synchronization software which provides two modes of synchronization, "one to one" and "many to one".
+
